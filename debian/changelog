@@ -1,0 +1,86 @@
+qtwebchannel-opensource-src (5.9.1-1ubuntu1) artful; urgency=medium
+
+  * Ignore the tests results for now. There is a failure on s390x which
+    is not reproducible on Debian s390x porterbox.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Wed, 19 Jul 2017 13:09:13 +0300
+
+qtwebchannel-opensource-src (5.9.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.9.1.
+  * Bump Standards-Version to 4.0.0, no changes needed.
+  * Add myself to Uploaders.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 05 Jul 2017 23:16:56 +0300
+
+qtwebchannel-opensource-src (5.9.0-1) experimental; urgency=medium
+
+  [ Simon Quigley ]
+  * New upstream release.
+
+  [ Dmitry Shachnev ]
+  * Update debian/copyright.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 11 Jun 2017 15:44:38 -0500
+
+qtwebchannel-opensource-src (5.7.1-2) unstable; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Team upload.
+  * Do not depend upon npm (Closes: #857994). It is used just by some examples
+    and currently not on all archs, so while removing it is not the ideal
+    solution is the only one we have available right now.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 04 Apr 2017 14:33:24 -0300
+
+qtwebchannel-opensource-src (5.7.1-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release.
+  * Re mark 5.7.1~* symbols to 5.7.1.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 16 Dec 2016 12:49:43 +0100
+
+qtwebchannel-opensource-src (5.7.1~20161021-3) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * Fix "qtwebchannel5-examples/armel unsatisfiable Depends: nodejs"
+      - mark mpm and nodejs to be [!armel]
+      - Closes: #846167
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 03 Dec 2016 12:22:33 +0100
+
+qtwebchannel-opensource-src (5.7.1~20161021-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Release to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 01 Nov 2016 14:46:30 +0100
+
+qtwebchannel-opensource-src (5.7.1~20161021-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream version.
+  * Bump to comapt 10 (default is now --parallel), so removed from rules
+    file.
+  * Update copyright to new release
+  * Update build-deps. Tighten to Qt5.7.1.
+  * Update patches (only hunk updates needed).
+  * Update symbol files.
+  * Remove also directory that holds private headers.
+  * Run tests not parallel, this triggers often strange bugs.
+  * Update my mailaddress to hefee@debian.org one.
+  * Added Multi-Arch hinters for arch=all packages.
+
+ -- Sandro Knauß <hefee@debian.org>  Sun, 30 Oct 2016 19:12:58 +0100
+
+qtwebchannel-opensource-src (5.6.1-1) unstable; urgency=medium
+
+  * Initial package (Closes: #832421)
+
+ -- Sandro Knauß <bugs@sandroknauss.de>  Sat, 27 Aug 2016 19:15:33 +0200

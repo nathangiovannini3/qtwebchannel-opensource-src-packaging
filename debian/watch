@@ -1,0 +1,2 @@
+version=4
+https://download.qt.io/official_releases/qt/([\d\.]*)/([\d\.]*)/submodules/@PACKAGE@@ANY_VERSION@@ARCHIVE_EXT@

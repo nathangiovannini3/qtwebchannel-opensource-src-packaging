@@ -1,0 +1,16 @@
+Description: Change shebang from node to nodejs
+ In Debian, the shebang line has to be nodejs, not node, due to the fact that
+ we have a node package that's different from the nodejs package, that's
+ tracked in Debian bug #614907
+Author: Simon Quigley <tsimonq2@ubuntu.com>
+Last-Update: 2016-07-27
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/examples/webchannel/qwclient/qwclient.js
++++ b/examples/webchannel/qwclient/qwclient.js
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env node
++#!/usr/bin/env nodejs
+ /****************************************************************************
+ **
+ ** Copyright (C) 2016 basysKom GmbH, author Sumedha Widyadharma <sumedha.widyadharma@basyskom.com>
