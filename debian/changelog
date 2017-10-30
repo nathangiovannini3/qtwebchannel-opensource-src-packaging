@@ -1,4 +1,4 @@
-qtwebchannel-opensource-src (5.9.1-1ubuntu1) artful; urgency=medium
+qtwebchannel-opensource-src (5.9.1+ubports) xenial; urgency=medium
 
   * Ignore the tests results for now. There is a failure on s390x which
     is not reproducible on Debian s390x porterbox.
