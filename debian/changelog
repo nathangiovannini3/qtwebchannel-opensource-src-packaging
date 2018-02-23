@@ -1,9 +1,49 @@
-qtwebchannel-opensource-src (5.9.1+ubports) xenial; urgency=medium
+qtwebchannel-opensource-src (5.9.3-0ubports2) xenial; urgency=medium
 
-  * Ignore the tests results for now. There is a failure on s390x which
-    is not reproducible on Debian s390x porterbox.
+  * Build for xenial 
 
- -- Dmitry Shachnev <mitya57@ubuntu.com>  Wed, 19 Jul 2017 13:09:13 +0300
+ -- Marius <mariogrip@ubuntu.com>  Fri, 23 Feb 2018 02:22:00 +0100
+
+qtwebchannel-opensource-src (5.9.3-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@ubuntu.com>  Sun, 03 Dec 2017 21:57:29 -0600
+
+qtwebchannel-opensource-src (5.9.2-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Make qtwebchannel5-examples recommends nodejs instead of directly
+    depending on it. Not all examples need nodejs.
+    - Add README.Debian explaining the issue.
+    - Expand the package description to warn the user to read README.Debian
+      before running the examples.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 27 Nov 2017 16:44:59 -0300
+
+qtwebchannel-opensource-src (5.9.2-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 26 Oct 2017 16:51:22 +0300
+
+qtwebchannel-opensource-src (5.9.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.9.2.
+  * Use dh_missing instead of deprecated dh_install --fail-missing.
+  * Bump Standards-Version to 4.1.1, no changes needed.
+  * Drop nodetonodejs.diff, no longer needed (see #862051).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Sun, 15 Oct 2017 21:33:19 +0300
+
+qtwebchannel-opensource-src (5.9.1-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 16 Aug 2017 15:14:04 -0300
 
 qtwebchannel-opensource-src (5.9.1-1) experimental; urgency=medium
 
@@ -66,7 +106,7 @@ qtwebchannel-opensource-src (5.7.1~20161021-1) experimental; urgency=medium
 
   [ Sandro Knauß ]
   * New upstream version.
-  * Bump to comapt 10 (default is now --parallel), so removed from rules
+  * Bump to compat 10 (default is now --parallel), so removed from rules
     file.
   * Update copyright to new release
   * Update build-deps. Tighten to Qt5.7.1.

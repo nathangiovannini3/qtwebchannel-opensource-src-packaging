@@ -2,22 +2,22 @@ Source: qtwebchannel-opensource-src
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Scarlett Clark <sgclark@kubuntu.org>,
-           Sandro Knauss <hefee@debian.org>,
+           Sandro Knauß <hefee@debian.org>,
            Dmitry Shachnev <mitya57@debian.org>,
            Simon Quigley <tsimonq2@ubuntu.com>
 Section: libs
 Priority: optional
 Build-Depends: debhelper (>= 9),
-               libqt5websockets5-dev (>= 5.9.1~),
+               libqt5websockets5-dev (>= 5.9.2~),
                pkg-kde-tools,
-               qml-module-qttest (>= 5.9.1~),
-               qtbase5-dev (>= 5.9.1~),
-               qtbase5-private-dev (>= 5.9.1~),
+               qml-module-qttest (>= 5.9.2~),
+               qtbase5-dev (>= 5.9.2+dfsg~),
+               qtbase5-private-dev (>= 5.9.2+dfsg~),
                qtchooser,
-               qtdeclarative5-private-dev (>= 5.9.1~)
-Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.1~),
-                     qttools5-dev-tools (>= 5.9.1~)
-Standards-Version: 4.0.0
+               qtdeclarative5-private-dev (>= 5.9.2~)
+Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.0~),
+                     qttools5-dev-tools (>= 5.9.0~)
+Standards-Version: 4.1.1
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/qt/qtwebchannel.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtwebchannel.git
 Homepage: https://doc.qt.io/qt-5/qtwebchannel-index.html
@@ -69,9 +69,9 @@ Package: qtwebchannel5-examples
 Architecture: any
 Multi-Arch: same
 Depends: libqt5webchannel5 (= ${binary:Version}),
-         nodejs [!armel !powerpc],
          ${misc:Depends},
          ${shlibs:Depends}
+Recommends: nodejs (>= 6.11.2~dfsg-1~) [!armel !powerpc]
 Pre-Depends: ${misc:Pre-Depends}
 Description: Web communication library for Qt - Examples
  Qt WebChannel enables peer-to-peer communication between the host (QML/C++
@@ -79,7 +79,8 @@ Description: Web communication library for Qt - Examples
  mechanism is supported out of the box by the two popular web engines, Qt
  WebKit 2 and Qt WebEngine (experimental).
  .
- This package contains the examples for Qt's WebChannel submodule.
+ This package contains the examples for Qt's WebChannel submodule. Be sure to
+ read README.Debian before trying to run them.
 
 Package: libqt5webchannel5
 Architecture: any
