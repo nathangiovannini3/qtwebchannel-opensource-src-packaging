@@ -50,12 +50,12 @@ override_dh_auto_install-arch:
 
 override_dh_auto_test-arch:
 	$(MAKE) install -Csrc/imports INSTALL_ROOT=$(CURDIR)/test_root
-	-dh_auto_test --no-parallel -- QT_QPA_PLATFORM=minimal QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml
+	dh_auto_test --no-parallel -- QT_QPA_PLATFORM=minimal QML2_IMPORT_PATH=$(CURDIR)/test_root/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml
 
 override_dh_auto_test-indep:
 
 override_dh_auto_install-indep:
 	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
 
-override_dh_install:
-	dh_install --fail-missing
+override_dh_missing:
+	dh_missing --fail-missing
