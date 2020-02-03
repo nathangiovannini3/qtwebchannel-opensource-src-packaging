@@ -1,3 +1,9 @@
+qtwebchannel-opensource-src (5.12.2-0ubports1) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Nathan Giovannini <nathan95@live.it>  Mon, 03 Feb 2019 09:52:15 -0500
+
 qtwebchannel-opensource-src (5.9.5-0ubports1) xenial; urgency=medium
 
   * New upstream release.
